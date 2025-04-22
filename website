@@ -1,0 +1,61 @@
+<!--
+  Solvingo One-Page Continuous Scroll Website
+  - Place `solvingo.png` (the logo) alongside this file
+  - Deploy as `index.html` on any static host (e.g., GitHub Pages, Netlify, Cloudflare Pages)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solvingo</title>
+  <style>
+    :root {
+      --primary: #242e2c;
+      --secondary: #e3e1c6;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; background: var(--primary); color: var(--secondary); }
+    .section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .section:nth-child(even) {
+      background: var(--secondary);
+      color: var(--primary);
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 0.75rem; }
+    p { max-width: 600px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <img src="solvingo.png" alt="Solvingo Logo" class="logo">
+    <h1>Solvingo</h1>
+    <p>AI-driven consulting sessions to help you ask the right questions &amp; solve business challenges.</p>
+  </section>
+  <section class="section">
+    <h2>Our Approach</h2>
+    <p>We combine deep consultation with AI tools to diagnose issues and identify solutions tailored to your needs.</p>
+  </section>
+  <section class="section">
+    <h2>Services</h2>
+    <p>One-on-one workshops, group sessions, and AI-prepped questionnaires. Flexible formats for any organization.</p>
+  </section>
+  <section class="section">
+    <h2>Get In Touch</h2>
+    <p>Email: hello@solvingo.ai</p>
+  </section>
+</body>
+</html>
